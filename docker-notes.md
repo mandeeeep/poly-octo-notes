@@ -1,6 +1,8 @@
-Docker Installation
+### Docker Installation
+
 .......
-Docker Configuration
+
+### Docker Configuration
 
 #### 1. Enabling docker
 
