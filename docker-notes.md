@@ -33,3 +33,8 @@ Docker Configuration
 
 #### 8. Create mongodump from replica set
 `mongodump --host "rs0/localhost:27017" --db DbName --excludeCollection=db.collec1 --excludeCollection=db.collec2 --excludeCollection=db.collec1 --excludeCollection=db.collec1 --excludeCollection=db.collec1 --gzip --archive=dump.gzip`
+
+#### 9. Mongorestore on Docker container
+
+`sudo docker exec -i dm36 sh -c 'mongorestore --gzip --archive' < dump.gzip`
+
